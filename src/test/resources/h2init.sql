@@ -1,6 +1,7 @@
 DROP TABLE IF EXISTS person;
 
-CREATE TABLE person (
+CREATE TABLE person
+(
                         id INT PRIMARY KEY,
                         name VARCHAR(100) NOT NULL,
                         email VARCHAR(150),

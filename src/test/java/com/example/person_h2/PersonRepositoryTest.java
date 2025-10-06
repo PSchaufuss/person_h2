@@ -22,7 +22,8 @@ class PersonRepositoryTest {
     private PersonRepository repo;
 
     @Test
-    void readAll() {
+    void readAll()
+    {
         List<Person> all = repo.findAll();
 
         assertThat(all).isNotNull();
@@ -33,7 +34,8 @@ class PersonRepositoryTest {
 
 
     @Test
-    void insertAndReadBack() {
+    void insertAndReadBack()
+    {
         repo.save(new Person(3, "Carol"));
         var carol = repo.findById(3);
         assertThat(carol).isNotNull();
